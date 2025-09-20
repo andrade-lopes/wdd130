@@ -1,0 +1,120 @@
+/* ---------- VARIABLES ---------- */
+:root {
+  --primary-color: #055a05; /* forest green */
+  --secondary-color: #f4a261; /* warm sand */
+  --accent1-color: #264653; /* dark slate blue */
+  --accent2-color: #e9c46a; /* light golden yellow */
+
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+/* Limit width and center content */
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+}
+
+/* Nav styles */
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Nav links */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Article image + text */
+article {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+article img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  border-top: 2px solid var(--secondary-color);
+  margin-top: 20px;
+  padding-top: 12px;
+}
+
+/* Social Media Links */
+.socialmedia {
+  margin-top: 10px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.socialmedia img {
+  width: 32px;
+  height: 32px;
+}
