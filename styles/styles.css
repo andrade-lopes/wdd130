@@ -20,17 +20,25 @@
 nav {
     background-color: var(--primary-color);
     padding: var(--padding-small);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: var(--nav-link-color);
     display: block;
     padding: var(--padding-medium);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 h1 {
     color: var(--primary-color);
     text-align: center;
+    border-bottom: 2px solid #333; /* adjust color/thickness as needed */
+    padding-bottom: 0.5em;
 }
 
 main img {
@@ -48,12 +56,16 @@ p {
 }
 
 main {
-    max-width: var(--max-width);
+    grid-column: 2/3;
+    margin: 1rem;
 }
 
 /* aside */
 aside {
     width: var(--aside-width);
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     text-align: justify;
     margin: 1rem;
     border: 1px solid var(--border-color);
@@ -86,4 +98,18 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
+}
+
+header, .grid, footer {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Make the grid layout */
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 3fr; /* aside smaller, main larger */
+  gap: 1rem;
 }
