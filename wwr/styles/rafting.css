@@ -108,7 +108,7 @@ nav a:hover {
 
 .hero-article p {
   flex: 2;
-  text-align: left;
+  text-align: justify;
 }
 
 .hero-article img {
@@ -119,12 +119,13 @@ nav a:hover {
 
 /* History */
 .history {
-  text-align: center;
+  text-align: justify;
   padding: 30px 20px;
 }
 
 .history h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .history-grid {
