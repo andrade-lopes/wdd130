@@ -26,82 +26,133 @@ body {
 
 /* Limit width and center content */
 header, main, footer {
-  width: 840px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 0.5em;
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent2-color);
+  padding: 12px 24px;
 }
 
-/* Nav styles */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+.logo {
+  width: 80px;
 }
 
 /* Nav links */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 16px;
+  gap: 24px;
 }
 
 nav a {
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: white;
 }
 
-/* Hero section */
+/* Hero */
 .hero {
-  position: relative;
   text-align: center;
+  position: relative;
+  padding: 20px;
 }
 
 .hero img {
   width: 100%;
   height: auto;
-  display: block;
+  border-radius: 8px;
 }
 
 .hero h1 {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 8px 16px;
-  border-radius: 8px;
-}
-
-/* Article image + text */
-article {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-article img {
-  width: 120px;
-  border-radius: 8px;
-}
-
-/* Footer styles */
-footer {
-  text-align: center;
-  font-size: 0.9rem;
+  font-size: 2.2rem;
+  margin: 16px 0;
   color: var(--primary-color);
-  border-top: 2px solid var(--secondary-color);
+}
+
+.hero p {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 12px;
+}
+
+.hero-side-img {
+  margin-top: 12px;
+  width: 180px;
+  border-radius: 8px;
+}
+
+/* History */
+.history {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.history h2 {
+  margin-bottom: 20px;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 250px 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Adventures */
+.adventures {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.adventure-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
   margin-top: 20px;
-  padding-top: 12px;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--accent2-color);
+  padding: 16px;
+  margin-top: 40px;
+  border-top: 3px solid var(--secondary-color);
+}
+
+footer p {
+  color: var(--primary-color);
 }
 
 /* Social Media Links */
@@ -110,11 +161,10 @@ footer {
 }
 
 .socialmedia a {
-  text-decoration: none;
-  margin: 0 5px;
+  margin-left: 12px;
 }
 
 .socialmedia img {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
