@@ -68,30 +68,52 @@ nav a:hover {
 .hero {
   text-align: center;
   position: relative;
-  padding: 20px;
+  padding: 40px;
 }
 
-.hero img {
+.hero-bg {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 8px;
 }
 
+/* Title over the image */
 .hero h1 {
-  font-size: 2.2rem;
-  margin: 16px 0;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 2rem;
   color: var(--primary-color);
 }
 
-.hero p {
-  margin: 0 auto;
+/* White box with text + image */
+.hero-article {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 16px;
+  border-radius: 8px;
   max-width: 800px;
-  padding: 12px;
 }
 
-.hero-side-img {
-  margin-top: 12px;
-  width: 180px;
+.hero-article p {
+  flex: 2;
+  text-align: left;
+}
+
+.hero-article img {
+  flex: 1;
+  max-width: 150px;
   border-radius: 8px;
 }
 
