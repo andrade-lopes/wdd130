@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="Home — Exciting Expeditions: whitewater rafting trips, local guides, and unforgettable outdoor adventures. Sign up for the newsletter and book your trip today." />
+    <meta name="author" content="Jose Lopes" />
+    <title>Home | Exciting Expeditions</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <!-- Header / Navigation (shared) -->
+    <header>
+        <img src="images/logo.jpg" alt="Exciting Expeditions Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero grid: left=hero image, right=intro + CTA -->
+        <section class="hero-grid">
+            <div class="hero-media" aria-hidden="true">
+                <img src="images/hero.jpg" alt="Group rafting through exciting rapids">
+            </div>
+
+            <div class="hero-text">
+                <h1>Exciting Expeditions</h1>
+                <p class="hero-sub">Thrilling whitewater rafting trips guided by experts — adventure, safety, and
+                    memories that last a lifetime.</p>
+
+                <blockquote class="hero-quote">
+                    “Life is a journey, not a destination... We must finish strong.”<br>
+                    <cite>— President Thomas S. Monson, "Finishers Wanted"</cite>
+                </blockquote>
+
+                <a class="btn-cta" href="trips.html">See Trips & Book Now</a>
+
+                <form class="newsletter" action="#" method="post" aria-label="Subscribe to newsletter">
+                    <label for="newsletter-email">Sign up for our monthly newsletter</label>
+                    <div class="newsletter-row">
+                        <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+                    <p class="muted">No spam — unsubscribe anytime.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Featured Trips preview (CSS Grid) -->
+        <section class="featured-trips">
+            <h2>Featured Trips</h2>
+            <div class="trips-grid">
+                <article class="trip-card">
+                    <img src="images/trip-rapids.jpg" alt="Fast rapids">
+                    <h3>Whitewater Rush</h3>
+                    <p class="trip-meta">Half-day • Intermediate • From $79</p>
+                    <p>Fast-moving rapids framed by canyon walls. For adventurous paddlers with some experience.</p>
+                    <a class="btn-small" href="trips.html#whitewater-rush">Learn More</a>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/trip-family.jpg" alt="Family rafting">
+                    <h3>Family Float</h3>
+                    <p class="trip-meta">2 hours • Beginner • From $49</p>
+                    <p>Gentle water and scenic views — perfect for families and first-timers.</p>
+                    <a class="btn-small" href="trips.html#family-float">Learn More</a>
+                </article>
+
+                <article class="trip-card">
+                    <img src="images/trip-camp.jpg" alt="Overnight camp by river">
+                    <h3>Overnight Expedition</h3>
+                    <p class="trip-meta">2 days • Intermediate-Advanced • From $199</p>
+                    <p>Camp under the stars, paddle longer stretches, and explore remote river access.</p>
+                    <a class="btn-small" href="trips.html#overnight-expedition">Learn More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (shared) -->
+    <footer>
+        <p>&copy; 2025 🌊 Exciting Expeditions 🌊 Jose Lopes</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram Icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
